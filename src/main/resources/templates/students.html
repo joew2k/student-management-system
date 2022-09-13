@@ -61,6 +61,9 @@
                 <td th:text ="${student.dob}"></td>
                 <td th:text ="${student.age}"></td>
                 <td th:text ="${student.email}"></td>
+                <td>
+                    <a th:href = "@{/students/edit/{id}(id=${student.id})}">Update</a>
+                </td>
             </tr>
             </tbody>
 
